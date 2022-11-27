@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <title>mark calculator</title>
+  <link rel="stylesheet" href="mark.css">
+</head>
+<body>
+<div class="background">
+  <div class="container">
+    <h1 class="head">canstudy</h1>
+    <div class="screen">
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <div class="animated infinite pulse">
+              CGPA <br> CALCULATOR
+            </div>
+          </div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input  type="text"  class="app-form-control"    placeholder="SEM 1 SGPA" id="sem1">
+            </div>
+             <div class="app-form-group">
+              <input  type="text"  class="app-form-control"    placeholder="SEM 2 SGPA" id="sem2">
+            </div>
+            <div class="app-form-group">
+              <input  type="text"  class="app-form-control"    placeholder="SEM 3 SGPA" id="sem3" >
+            </div>
+            <div class="app-form-group">
+                <input  type="text"  class="app-form-control"   placeholder="SEM 4 SGPA" id="sem4" >
+              </div>
+              <div class="app-form-group">
+                <input  type="text"  class="app-form-control"   placeholder="SEM 5 SGPA" id="sem5" >
+              </div>
+              <div class="app-form-group">
+                <input  type="text"  class="app-form-control"   placeholder="SEM 6 SGPA" id="sem6" >
+              </div>
+              <div class="app-form-group">
+                <input  type="text"  class="app-form-control"   placeholder="SEM 7 SGPA" id="sem7" >
+              </div>
+              <div class="app-form-group">
+                <input  type="text"  class="app-form-control"   placeholder="SEM 8 SGPA" id="sem8" >
+              </div>
+              </div>
+              <input type="button" name="" value="showPercentage" class="app-form-button" onclick="calcy()">
+            </div>            
+            </div>
+            <div class="app-form-group showdata">
+                    <p id="showData" >  </p>
+            </div>
+           
+  </div>
+<a href="#" class="flex-align-left" id="copyright">&copy; 2022 | CANSTUDY </a>
+</div>
+</body>
+<script>
+  
+const calcy = () =>{
+  let sem1 = parseFloat(document.getElementById('sem1').value);
+  let sem2 = parseFloat(document.getElementById('sem2').value);
+  let sem3 = parseFloat(document.getElementById('sem3').value);
+  let sem4 = parseFloat(document.getElementById('sem4').value);
+  let sem5 = parseFloat(document.getElementById('sem5').value);
+  let sem6 = parseFloat(document.getElementById('sem6').value);
+  let sem7 = parseFloat(document.getElementById('sem7').value);
+  let sem8 = parseFloat(document.getElementById('sem8').value);
+  let grades = "";
+
+if(sem1<=10 && sem2<=10 && sem3<=10 && sem4<=10 && sem5<=10 && sem6<=10 && sem7<=10 && sem8<=10){
+  let totalGrades = sem1+sem2+sem3+sem4+sem5+sem6+sem7+sem8;
+  let cgpa = (totalGrades/8);
+  let perc = (cgpa-.75)*10;
+  debugger;
+    document.getElementById('showData').innerHTML = `CGPA: ${cgpa} PERCENTAGE: ${perc}%.`
+}
+}
+
+
+</script>
+
+</body>
+</html>

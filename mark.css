@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css");
+
+body {
+    background:#204051;
+    font-size: 12px;
+  }
+  
+  body, button, input {
+    font-family: 'Righteous', cursive;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  .head{
+    text-align: center;
+    font-size: 6em;
+    color: #84A9AC;
+
+  }
+  .background {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .container {
+    box-sizing: border-box;
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    background:#CAE8D5;
+    border-radius: 15px;
+  }
+  
+
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .app-title {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    color: #204051;
+    font-size: 26px;
+    text-transform: uppercase;
+    border-left: 4px solid #203239;
+    padding: 10px;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #203239;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #203239;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #203239;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: #203239;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+  }
+  
+  .app-form-button:hover {
+    color: #1b6858;
+  }
+  
+  .showdata{
+    text-align: center;
+    color: #203239;
+    font-size: 1.2rem;
+    padding-top: -10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+  #copyright{
+  
+    color: #CAE8D5;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    
+  }
+  @media (max-width: 920px) {
+    body, button, input {
+      font-family: 'Righteous', cursive;
+      width: 100%;
+      letter-spacing: 1.4px;
+    }
+    body {
+      background:#204051;
+      font-size: 12px;
+      width: 96%;
+      
+    }
+    .background {
+        display: flex;
+        position: relative;
+      }    
+   
+      .app-form-control {
+        width: 100%;
+        padding:  10px 0;
+        background: none;
+        border: 0;
+        border-bottom: 1px solid #666;
+        color: #ddd;
+        font-size: 14px;
+        text-transform: uppercase;
+        outline: none;
+        transition: border-color .2s;  
+        
+      }
+    .screen-body-item.left{
+        display: grid;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+      
+      }
+      .screen-body {
+        display: grid;
+        width: 100%;
+        height: 100%;
+      }
+      .screen {
+        position: relative;
+        background:#CAE8D5;
+        border-radius: 15px;
+      }
+    .app-title {
+        display: flex;
+        /*flex-direction: column;*/
+        justify-content: center;
+        align-items: stretch;
+        color: #204051;
+        font-size: 26px;
+        text-transform: uppercase;
+        border-left: 4px solid #203239;
+        padding: 10px;
+      }
+      .app-form-group {
+        margin-bottom: 15px;
+      }
+      
+      .app-form-group.buttons {
+        margin-bottom: 0;
+        text-align: right;
+      }
+      .app-form-control {
+        width: 100%;
+        padding:  20px 0;
+        background: none;
+        border: 0;
+        border-bottom: 1px solid #666;
+        color: #204051;
+        font-size: 14px;
+        text-transform: uppercase;
+        outline: none;
+        transition: border-color .2s;  
+        
+      }
+      
+  }
