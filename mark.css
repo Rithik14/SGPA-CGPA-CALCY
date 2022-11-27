@@ -105,10 +105,12 @@ body {
     outline: none;
     text-transform: uppercase;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
   }
   
   .app-form-button:hover {
     color: #1b6858;
+    
   }
   
   .showdata{
@@ -205,6 +207,7 @@ body {
     text-decoration: none;
     padding: 8px;
     border-radius: 7px;
+    -webkit-tap-highlight-color: transparent;
   }
   
   .app-form-button1:hover {
