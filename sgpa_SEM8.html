@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mark calculator</title>
+  <link rel="stylesheet" href="mark.css">
+</head>
+<body>
+
+<div class="background">
+  <div class="container">
+    <h1 class="head">canstudy</h1>
+    <div class="screen">
+      
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <div class="animated infinite pulse">
+              Eighth <br> Semester <br> SGPA
+            </div>
+          </div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="18XX81" id="18XX81">
+            </div>
+             <div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="18XX82X" id="18XX82X">
+            </div>
+            <div class="app-form-group">
+              <input  type="text"  class="app-form-control"   placeholder="18XXP83" id="18XXP83" >
+            </div>
+            <div class="app-form-group">
+                <input  type="text"  class="app-form-control"   placeholder="18XXS84" id="18XXS84" >
+              </div>
+              <div class="app-form-group">
+                <input  type="text"  class="app-form-control"   placeholder="18XX185" id="18XX185" >
+              </div>
+            </div>
+            <input type="button" name="" value="showPercentage" class="app-form-button" onclick="calcy()">
+          </div>            
+          </div>
+          <div class="app-form-group showdata">
+                  <p id="showData" >  </p>
+          </div>
+</div>
+<a href="#" class="flex-align-left" id="copyright">&copy; 2022 | CANSTUDY </a>
+</div>
+
+<script>
+    function mark(x) {
+     /* debugger;*/
+      if(x<=100){
+  if( x >= 90){
+   return grades = 10;
+  }else if(x >= 80){
+    return grades = 9;
+  }else if(x >= 70){
+     return grades = 8;
+  }else if(x >= 60){
+     return grades = 7;
+  }else if(x >= 50){
+     return grades = 6;
+  }else if(x >= 45){
+     return grades = 5;
+  }else if(x >= 40){
+     return grades = 4;
+  }else if(x < 40){
+     return grades = 0;
+  }
+  else{
+    return grades = 0;
+  }
+    }}
+const calcy = () =>{
+  
+  let sub1 = mark(parseFloat(document.getElementById('18XX81').value));
+  let sub2 = mark(parseFloat(document.getElementById('18XX82X').value));
+  let sub3 = mark(parseFloat(document.getElementById('18XXP83').value));
+  let sub4 = mark(parseFloat(document.getElementById('18XXS84').value));
+  let sub5 = mark(parseFloat(document.getElementById('18XX185').value));
+  let credit = 18;
+
+    sub1 = (sub1)*3;
+    sub2 = (sub2)*3;
+    sub3 = (sub3)*8; 
+    sub4 = (sub4)*1;
+    sub5 = (sub5)*3;
+
+
+    let totalcredit = sub1 + sub2 + sub3 + sub4 + sub5;
+    let sgpa = totalcredit/credit;
+    let perc = (sgpa-0.75)*10;
+    
+
+  if(40<sub1<=100 && 40<sub2<=100 && 40<sub3<=100 && 40<sub4<=100 && 40<sub5<=100){
+    document.getElementById('showData').innerHTML = `SGPA: ${sgpa}   PERCENTAGE: ${perc}%`
+  }
+  else{
+    document.getElementById('showData').innerHTML = `SGPA: ${sgpa}   PERCENTAGE: ${perc}%`
+  }
+
+}
+
+
+
+</script>
+
+</body>
+</html>
