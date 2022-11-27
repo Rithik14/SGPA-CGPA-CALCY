@@ -145,15 +145,17 @@ body {
     border-radius: 10px;
   }
   .sem-btn1{
-    background-color: #84A9AC;
+    background-color: #CAE8D5;
     color: #203239;
     cursor: pointer;
     text-decoration: none;
     box-shadow: inset 0 0 0 0 #84A9AC;
     transition: ease-out 0.3s;
+    -webkit-tap-highlight-color: transparent;
   }
   .sem-btn1:hover{
-    box-shadow: inset 500px 0 0 0 #CAE8D5;
+    box-shadow: inset 500px 0 0 0 #84A9AC;
+    -webkit-tap-highlight-color: transparent;
   }
   .flex-container {
     display: flex;
@@ -300,10 +302,12 @@ body {
         border-radius: 7px;
         position: absolute;
         margin: 1em;
+        -webkit-tap-highlight-color: transparent;
       }
       
       .app-form-button1:hover {
         background: #84A9AC;
+        -webkit-tap-highlight-color: transparent;
       }
 
 
@@ -317,6 +321,7 @@ body {
         padding-bottom: 28px;
        border-radius: 10px;
        font-size: 20px;
+       -webkit-tap-highlight-color: transparent;
       }
       #sem-bt1{
         color: #203239;
@@ -328,17 +333,20 @@ body {
          padding-bottom: 28px;
         border-radius: 10px;
         font-size: 20px;
+        -webkit-tap-highlight-color: transparent;
       }
       .sem-btn1{
-        background-color: #84A9AC;
+        background-color: #CAE8D5;
         color: #203239;
         cursor: pointer;
         text-decoration: none;
         box-shadow: inset 0 0 0 0 #84A9AC;
         transition: ease-out 0.3s;
+        -webkit-tap-highlight-color: transparent;
       }
       .sem-btn1:hover{
-        box-shadow: inset 500px 0 0 0 #CAE8D5;
+        box-shadow: inset 500px 0 0 0 #84A9AC;
+        -webkit-tap-highlight-color: transparent;
       }
       .flex-container {
         display: flex;
