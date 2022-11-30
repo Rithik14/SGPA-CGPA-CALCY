@@ -277,7 +277,7 @@ body {
         padding-right: 15%; 
       }
       .btn-space1{
-        padding-left: 25%;
+        padding: 25%;
       }
     .screen-body-item.left{
         display: grid;
