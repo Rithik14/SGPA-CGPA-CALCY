@@ -270,11 +270,14 @@ body {
       .app-form{
         color: #204051;
         font-size: 20px;
+        text-align: center;
       }
       .btn-space{
         padding-left: 15%;
         padding-right: 15%; 
- 
+      }
+      .btn-space1{
+        padding-left: 15%;
       }
     .screen-body-item.left{
         display: grid;
