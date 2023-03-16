@@ -1,5 +1,7 @@
 <h1> SGPA-CGPA-CALCY </h1>
 <p>Marks calculation is an important aspect of college and school life. Although there are numerous methods of carrying out the same task, the most used method of score calculation is the GPA method. The one aspect of this method that appears a little confusing but is a perfectly simple concept is the conversion from SGPA to CGPA. Even though both the concepts of SGPA and CGPA serve a similar purpose, they differ from each other and are calculated separately and through different methods.</p>
+<h2>Demo</h2>
+<img style="width:30%" src="./demo.gif" />
 <br>
 <h1>What is SGPA?</h1> 
 <p>SGPA is the abbreviated form of Sessional Grade Point Average/Semester End Grade Point Average. Before delving into the discussion of SGPA and CGPA, let’s first understand what these two mean. To begin with, the marks we score in our schools or colleges can be calculated in different ways. One of these ways includes SGPA. It is the grade point average that is calculated at the end of an academic session like a year at school or a semester at college. First, adding the grade points of all the subjects in an academic year or session are collected together and then their average is calculated which is referred to as the SGPA for that particular year or session.</p>
