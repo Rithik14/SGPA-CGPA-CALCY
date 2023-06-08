@@ -55,7 +55,7 @@
             </div>
            
   </div>
-<a href="#" class="flex-align-left" id="copyright">&copy; 2022 | CANSTUDY </a>
+<a href="#" class="flex-align-left" id="copyright">&copy; 2023 | CANSTUDY </a>
 </div>
 </body>
 <script>
@@ -73,8 +73,8 @@ const calcy = () =>{
 
 if(sem1<=10 && sem2<=10 && sem3<=10 && sem4<=10 && sem5<=10 && sem6<=10 && sem7<=10 && sem8<=10){
   let totalGrades = sem1+sem2+sem3+sem4+sem5+sem6+sem7+sem8;
-  let cgpa = (totalGrades/8);
-  let perc = (cgpa-.75)*10;
+  let cgpa = (totalGrades/8). toFixed(2) ;
+  let perc = ((cgpa-.75)*10). toFixed(2) ;
   debugger;
     document.getElementById('showData').innerHTML = `CGPA: ${cgpa} PERCENTAGE: ${perc}%.`
 }
